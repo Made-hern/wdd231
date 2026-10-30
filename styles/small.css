@@ -1,0 +1,253 @@
+
+/* GENERAL SETTINGS */
+:root {
+    --primary-color: #6c3b91;
+    --secondary-color: #e9d8f5;
+    --accent-color: #f2a6c7;
+    --dark-color: #292235;
+    --light-color: #ffffff;
+    --background-color: #faf7fc;
+    --border-color: #e5d9ed;
+    --success-color: #d9f2e6;
+    --font-heading: "Playfair Display", serif;
+    --font-body: "DM Sans", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--background-color);
+    color: var(--dark-color);
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background-color: var(--light-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.brand img {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+}
+
+#menu-button {
+    background: var(--primary-color);
+    color: var(--light-color);
+    border: none;
+    padding: 8px 13px;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#main-nav {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+#main-nav.open {
+    display: flex;
+}
+
+#main-nav a {
+    text-decoration: none;
+    color: var(--dark-color);
+    padding: 12px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#main-nav a:hover,
+#main-nav a.active {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+/* MAIN CONTENT */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+h1,
+h2 {
+    font-family: var(--font-heading);
+}
+
+h1 {
+    font-size: 2.3rem;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+}
+
+h2 {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    padding: 12px;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+}
+
+.about-section,
+.photo-section,
+.courses-section {
+    background-color: var(--light-color);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(50, 30, 70, 0.06);
+}
+
+.section-content {
+    padding: 22px;
+}
+
+.about-section p {
+    margin-bottom: 15px;
+}
+
+.photo-content {
+    display: flex;
+    justify-content: center;
+}
+
+.photo-content img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* COURSE FILTERS */
+.course-filters {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+}
+
+.filter-button {
+    flex: 1;
+    padding: 11px;
+    border: 1px solid var(--primary-color);
+    background-color: var(--light-color);
+    color: var(--primary-color);
+    border-radius: 8px;
+    font-family: var(--font-body);
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.filter-button:hover,
+.filter-button.active {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+
+/* COURSE CARDS */
+.course-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 0 20px 20px;
+}
+
+.course-card {
+    border: 1px solid var(--border-color);
+    background-color: var(--light-color);
+    border-radius: 10px;
+    padding: 16px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.course-card.completed {
+    background-color: var(--success-color);
+    border-color: #8bc9a8;
+}
+
+.course-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.course-card p {
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.credit-total {
+    padding: 0 20px 20px;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 40px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 15px;
+}
+
+.social-links a {
+    color: var(--light-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.social-links a:hover {
+    color: var(--accent-color);
+}
+
+.footer-info p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
