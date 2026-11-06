@@ -1,0 +1,66 @@
+
+[
+    {
+        "name": "Colonial Coffee House",
+        "address": "5a Avenida Norte, Antigua Guatemala",
+        "phone": "+502 5550-0101",
+        "website": "https://example.com",
+        "image": "colonial-coffee.jpg",
+        "membershipLevel": 3,
+        "description": "A local coffee shop offering traditional Guatemalan coffee and specialty drinks."
+    },
+    {
+        "name": "Casa de los Volcanes Hotel",
+        "address": "6a Calle Poniente, Antigua Guatemala",
+        "phone": "+502 5550-0102",
+        "website": "https://example.com",
+        "image": "volcanes-hotel.jpg",
+        "membershipLevel": 2,
+        "description": "A boutique hotel inspired by the colonial architecture of Antigua Guatemala."
+    },
+    {
+        "name": "Arte Colonial Boutique",
+        "address": "4a Calle Oriente, Antigua Guatemala",
+        "phone": "+502 5550-0103",
+        "website": "https://example.com",
+        "image": "arte-colonial.jpg",
+        "membershipLevel": 1,
+        "description": "A local store featuring handmade crafts, textiles, and Guatemalan art."
+    },
+    {
+        "name": "Antigua Gourmet",
+        "address": "3a Avenida Sur, Antigua Guatemala",
+        "phone": "+502 5550-0104",
+        "website": "https://example.com",
+        "image": "antigua-gourmet.jpg",
+        "membershipLevel": 3,
+        "description": "A restaurant serving traditional Guatemalan cuisine with a modern touch."
+    },
+    {
+        "name": "Volcano Adventures",
+        "address": "7a Avenida Norte, Antigua Guatemala",
+        "phone": "+502 5550-0105",
+        "website": "https://example.com",
+        "image": "volcano-adventures.jpg",
+        "membershipLevel": 2,
+        "description": "A tourism company organizing guided hikes and outdoor adventures."
+    },
+    {
+        "name": "Flor de Antigua",
+        "address": "2a Calle Oriente, Antigua Guatemala",
+        "phone": "+502 5550-0106",
+        "website": "https://example.com",
+        "image": "flor-de-antigua.jpg",
+        "membershipLevel": 1,
+        "description": "A flower shop specializing in floral arrangements and event decorations."
+    },
+    {
+        "name": "Maya Digital Solutions",
+        "address": "1a Avenida Sur, Antigua Guatemala",
+        "phone": "+502 5550-0107",
+        "website": "https://example.com",
+        "image": "maya-digital.jpg",
+        "membershipLevel": 3,
+        "description": "A digital agency providing web design, marketing, and technology services."
+    }
+]

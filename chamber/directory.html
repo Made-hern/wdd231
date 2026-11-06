@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Explore the Antigua Guatemala Chamber of Commerce business directory. Discover local businesses, services, restaurants, hotels, and organizations.">
+    <meta name="author" content="Madelin Rebeca Hernández Aguilar">
+
+    <title>Business Directory | Antigua Guatemala Chamber of Commerce</title>
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <meta property="og:title" content="Antigua Guatemala Chamber of Commerce | Business Directory">
+    <meta property="og:description" content="Discover local businesses and services in Antigua Guatemala. Support our community and connect with local businesses.">
+    <meta property="og:image" content="https://made-hern.github.io/wdd231/chamber/images/antigua-social.jpg">
+    <meta property="og:image:alt" content="Antigua Guatemala Chamber of Commerce">
+    <meta property="og:url" content="https://made-hern.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/directory.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="brand">
+                <span class="brand-name">Antigua Guatemala</span>
+                <span class="brand-subtitle">Chamber of Commerce</span>
+            </a>
+
+            <button id="menu-button" aria-label="Open navigation menu" aria-expanded="false">
+                ☰
+            </button>
+
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html" class="active" aria-current="page">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-heading">
+            <h1>Business Directory</h1>
+            <p>
+                Discover and connect with local businesses in Antigua Guatemala.
+                Support our community and explore everything our region has to offer.
+            </p>
+        </section>
+
+        <section class="directory-section">
+            <div class="directory-header">
+                <h2>Our Members</h2>
+
+                <div class="view-options">
+                    <button id="grid-view" class="view-button active" aria-label="Display members in grid view" aria-pressed="true">
+                        Grid
+                    </button>
+
+                    <button id="list-view" class="view-button" aria-label="Display members in list view" aria-pressed="false">
+                        List
+                    </button>
+                </div>
+            </div>
+
+            <div id="member-directory" class="member-grid" aria-live="polite">
+                <p>Loading business directory...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-contact">
+                <h3>Antigua Guatemala Chamber of Commerce</h3>
+                <p>Antigua Guatemala, Sacatepéquez, Guatemala</p>
+                <p>Phone: +502 0000-0000</p>
+                <p>Email: info@example.com</p>
+            </div>
+
+            <div class="footer-development">
+                <p>WDD 231 - Web Frontend Development I</p>
+                <p>Developed by Madelin Rebeca Hernández Aguilar</p>
+                <p>&copy; <span id="current-year"></span> Antigua Guatemala Chamber of Commerce</p>
+                <p>Last Modified: <span id="last-modified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
