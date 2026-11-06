@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Explore the Antigua Guatemala Chamber of Commerce business directory. Discover local businesses, services, restaurants, hotels, and organizations.">
+    <meta name="description" content="Explore the Antigua Guatemala Chamber of Commerce business directory. Discover local businesses, restaurants, hotels, and services.">
     <meta name="author" content="Madelin Rebeca Hernández Aguilar">
 
     <title>Business Directory | Antigua Guatemala Chamber of Commerce</title>
 
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
 
+    <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Antigua Guatemala Chamber of Commerce | Business Directory">
     <meta property="og:description" content="Discover local businesses and services in Antigua Guatemala. Support our community and connect with local businesses.">
     <meta property="og:image" content="https://made-hern.github.io/wdd231/chamber/images/antigua-social.jpg">
@@ -19,10 +20,17 @@
     <meta property="og:url" content="https://made-hern.github.io/wdd231/chamber/directory.html">
     <meta property="og:type" content="website">
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Files -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
 
+    <!-- JavaScript -->
     <script src="scripts/directory.js" defer></script>
 </head>
 
@@ -63,11 +71,19 @@
                 <h2>Our Members</h2>
 
                 <div class="view-options">
-                    <button id="grid-view" class="view-button active" aria-label="Display members in grid view" aria-pressed="true">
+                    <button
+                        id="grid-view"
+                        class="view-button active"
+                        aria-label="Display members in grid view"
+                        aria-pressed="true">
                         Grid
                     </button>
 
-                    <button id="list-view" class="view-button" aria-label="Display members in list view" aria-pressed="false">
+                    <button
+                        id="list-view"
+                        class="view-button"
+                        aria-label="Display members in list view"
+                        aria-pressed="false">
                         List
                     </button>
                 </div>
@@ -91,7 +107,10 @@
             <div class="footer-development">
                 <p>WDD 231 - Web Frontend Development I</p>
                 <p>Developed by Madelin Rebeca Hernández Aguilar</p>
-                <p>&copy; <span id="current-year"></span> Antigua Guatemala Chamber of Commerce</p>
+                <p>
+                    &copy; <span id="current-year"></span>
+                    Antigua Guatemala Chamber of Commerce
+                </p>
                 <p>Last Modified: <span id="last-modified"></span></p>
             </div>
         </div>
