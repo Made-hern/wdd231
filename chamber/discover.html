@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the history, culture, attractions, and places of interest in Antigua Guatemala.">
+    <meta name="author" content="Madelin Hernández">
+    <title>Discover | Antigua Guatemala Chamber of Commerce</title>
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/discover.css">
+
+    <script type="module" src="scripts/discover.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="brand">
+                <span class="brand-name">Antigua Guatemala</span>
+                <span class="brand-subtitle">Chamber of Commerce</span>
+            </a>
+
+            <button id="menu-button" aria-label="Open navigation menu" aria-expanded="false">
+                ☰
+            </button>
+
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="discover-main">
+        <section class="discover-heading">
+            <p class="eyebrow">Explore our city</p>
+            <h1>Discover Antigua Guatemala</h1>
+            <p>
+                Explore the history, culture, architecture, and unique places
+                that make Antigua Guatemala a special destination.
+            </p>
+        </section>
+
+        <section class="visitor-message" aria-live="polite">
+            <h2>Welcome, Visitor!</h2>
+            <p id="visit-message">Welcome! Let us know if you have any questions.</p>
+        </section>
+
+        <section class="discover-intro">
+            <h2>A City Full of History and Culture</h2>
+            <p>
+                Antigua Guatemala is a historic city known for its colonial
+                architecture, cobblestone streets, cultural traditions, and
+                beautiful views of surrounding volcanoes. Its heritage and
+                vibrant community make it an attractive place to visit and do
+                business.
+            </p>
+        </section>
+
+
+<section class="city-facts">
+    <div class="fact-card">
+        <p class="eyebrow">Our heritage</p>
+        <h2>A City with a Rich History</h2>
+        <p>
+            Antigua Guatemala was founded in the 16th century and served as
+            the capital of the Kingdom of Guatemala. After the earthquakes
+            of 1773, the capital was moved to its present location.
+            Today, Antigua is recognized for its preserved colonial
+            architecture and historic urban layout.
+        </p>
+        <p>
+            In 1979, Antigua Guatemala was declared a UNESCO World Heritage Site.
+        </p>
+    </div>
+
+    <div class="fact-card population-card">
+        <p class="eyebrow">Our community</p>
+        <h2>Population</h2>
+        <p class="population-number">62,873</p>
+        <p>
+            Estimated municipal population for 2026, according to the
+            population projection published by the Municipality of Antigua Guatemala.
+        </p>
+        <p class="fact-note">Municipality of Antigua Guatemala · 2026 projection</p>
+    </div>
+
+    <div class="fact-card">
+        <p class="eyebrow">Local traditions</p>
+        <h2>Culture and Events</h2>
+        <p>
+            Antigua is known for its religious traditions, cultural festivals,
+            local markets, and artistic activities. Holy Week is one of the
+            city's most important annual celebrations, featuring processions
+            and colorful street carpets.
+        </p>
+        <p>
+            The Festival of Flowers is another cultural event that brings
+            color and visitors to the historic center.
+        </p>
+    </div>
+</section>
+
+
+        <section class="attractions-section" aria-labelledby="attractions-heading">
+            <div class="section-title">
+                <p class="eyebrow">Places to explore</p>
+                <h2 id="attractions-heading">Local Attractions</h2>
+                <p>Discover eight interesting places around our community.</p>
+            </div>
+
+            <div id="attractions-container" class="attractions-grid">
+                <!-- Attraction cards are generated with JavaScript -->
+            </div>
+        </section>
+    </main>
+<footer>
+        <div class="footer-container">
+            <div class="footer-contact">
+                <h3>Antigua Guatemala Chamber of Commerce</h3>
+                <p>Antigua Guatemala, Sacatepéquez, Guatemala</p>
+                <p>Phone: +502 0000-0000</p>
+                <p>Email: info@example.com</p>
+            </div>
+
+            <div class="footer-development">
+                <p>WDD 231 - Web Frontend Development I</p>
+                <p>Developed by Madelin Rebeca Hernández Aguilar</p>
+                <p>
+                    &copy; <span id="current-year"></span>
+                    Antigua Guatemala Chamber of Commerce
+                </p>
+                <p>Last Modified: <span id="last-modified"></span></p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

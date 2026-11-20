@@ -1,0 +1,280 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Apply for membership at the Antigua Guatemala Chamber of Commerce. Explore membership levels and benefits.">
+    <meta name="author" content="Madelin Hernández">
+    <title>Join the Chamber | Antigua Guatemala Chamber of Commerce</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <script src="scripts/join.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="brand">
+                <span class="brand-name">Antigua Guatemala</span>
+                <span class="brand-subtitle">Chamber of Commerce</span>
+            </a>
+
+            <button id="menu-button" aria-label="Open navigation menu" aria-expanded="false">
+                ☰
+            </button>
+
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="join-main">
+        <section class="page-heading">
+            <p class="eyebrow">Become a member</p>
+            <h1>Join the Chamber</h1>
+            <p>Connect with local businesses, discover new opportunities, and help our community grow.</p>
+        </section>
+
+        <div class="join-layout">
+            <section class="application-section" aria-labelledby="application-heading">
+                <h2 id="application-heading">Membership Application</h2>
+                <p class="section-intro">Complete the form below to submit your membership application.</p>
+
+                <form method="get" action="thankyou.html" id="membership-form">
+                    <div class="form-grid">
+                        <label for="firstName">
+                            First Name <span class="required-mark">*</span>
+                            <input
+                                type="text"
+                                id="firstName"
+                                name="firstName"
+                                title="Enter your first name."
+                                autocomplete="given-name"
+                                required>
+                        </label>
+
+                        <label for="lastName">
+                            Last Name <span class="required-mark">*</span>
+                            <input
+                                type="text"
+                                id="lastName"
+                                name="lastName"
+                                title="Enter your last name."
+                                autocomplete="family-name"
+                                required>
+                        </label>
+
+                        <label for="organizationTitle">
+                            Organizational Title
+                            <input
+                                type="text"
+                                id="organizationTitle"
+                                name="organizationTitle"
+                                title="Enter at least seven characters using letters, spaces, or hyphens."
+                                autocomplete="organization-title"
+                                pattern="[A-Za-zÀ-ÿ -]{7,}"
+                                minlength="7"
+                                placeholder="Example: Marketing Manager">
+                            <span class="field-hint">At least 7 characters. Letters, spaces, and hyphens only.</span>
+                        </label>
+
+                        <label for="email">
+                            Email Address <span class="required-mark">*</span>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                title="Enter a valid email address."
+                                autocomplete="email"
+                                placeholder="name@example.com"
+                                required>
+                        </label>
+
+                        <label for="phone">
+                            Mobile Phone <span class="required-mark">*</span>
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                title="Enter your mobile phone number."
+                                autocomplete="tel"
+                                placeholder="+502 5555 5555"
+                                required>
+                        </label>
+
+                        <label for="organization">
+                            Business / Organization Name <span class="required-mark">*</span>
+                            <input
+                                type="text"
+                                id="organization"
+                                name="organization"
+                                title="Enter your business or organization name."
+                                autocomplete="organization"
+                                required>
+                        </label>
+
+                        <label for="membership">
+                            Membership Level <span class="required-mark">*</span>
+                            <select id="membership" name="membership" required>
+                                <option value="" disabled selected>Select a membership level</option>
+                                <option value="NP Membership">NP Membership — Free</option>
+                                <option value="Bronze Membership">Bronze Membership — Q250/year</option>
+                                <option value="Silver Membership">Silver Membership — Q500/year</option>
+                                <option value="Gold Membership">Gold Membership — Q900/year</option>
+                            </select>
+                        </label>
+
+                        <label for="description" class="full-width">
+                            Business / Organization Description
+                            <textarea
+                                id="description"
+                                name="description"
+                                rows="5"
+                                title="Briefly describe your business or organization."
+                                placeholder="Tell us about your business, services, or organization."></textarea>
+                        </label>
+                    </div>
+
+                    <input type="hidden" id="timestamp" name="timestamp">
+
+                    <button type="submit" class="submit-button">Submit Application</button>
+                    <p class="form-note"><span class="required-mark">*</span> Required fields</p>
+                </form>
+            </section>
+
+            <aside class="membership-section" aria-labelledby="membership-heading">
+                <h2 id="membership-heading">Membership Levels</h2>
+                <p class="section-intro">Choose the membership that best fits your organization.</p>
+
+                <div class="membership-cards">
+                    <article class="membership-card np-card">
+                        <p class="membership-label">For nonprofit organizations</p>
+                        <h3>NP Membership</h3>
+                        <p class="membership-price">Free</p>
+                        <p>Basic access to Chamber resources and community opportunities.</p>
+                        <a href="#np-modal" class="benefits-link" data-modal="np-modal">View Benefits</a>
+                    </article>
+
+                    <article class="membership-card bronze-card">
+                        <p class="membership-label">Start growing</p>
+                        <h3>Bronze Membership</h3>
+                        <p class="membership-price">Q250 <span>/ year</span></p>
+                        <p>Build connections and increase your business visibility.</p>
+                        <a href="#bronze-modal" class="benefits-link" data-modal="bronze-modal">View Benefits</a>
+                    </article>
+
+                    <article class="membership-card silver-card">
+                        <p class="membership-label">More opportunities</p>
+                        <h3>Silver Membership</h3>
+                        <p class="membership-price">Q500 <span>/ year</span></p>
+                        <p>Enjoy additional promotion, training, and networking benefits.</p>
+                        <a href="#silver-modal" class="benefits-link" data-modal="silver-modal">View Benefits</a>
+                    </article>
+
+                    <article class="membership-card gold-card">
+                        <p class="membership-label">Premium visibility</p>
+                        <h3>Gold Membership</h3>
+                        <p class="membership-price">Q900 <span>/ year</span></p>
+                        <p>Get premium exposure and exclusive business opportunities.</p>
+                        <a href="#gold-modal" class="benefits-link" data-modal="gold-modal">View Benefits</a>
+                    </article>
+                </div>
+            </aside>
+        </div>
+
+        <!-- Membership benefit dialogs -->
+        <dialog id="np-modal" class="benefits-modal">
+            <div class="modal-content">
+                <button class="modal-close" type="button" aria-label="Close dialog">×</button>
+                <p class="eyebrow">Membership benefits</p>
+                <h2>NP Membership</h2>
+                <p class="modal-price">Free</p>
+                <ul>
+                    <li>Access to selected Chamber resources.</li>
+                    <li>Invitations to community networking activities.</li>
+                    <li>Access to nonprofit community announcements.</li>
+                    <li>Opportunities to connect with local organizations.</li>
+                </ul>
+            </div>
+        </dialog>
+
+        <dialog id="bronze-modal" class="benefits-modal">
+            <div class="modal-content">
+                <button class="modal-close" type="button" aria-label="Close dialog">×</button>
+                <p class="eyebrow">Membership benefits</p>
+                <h2>Bronze Membership</h2>
+                <p class="modal-price">Q250 / year</p>
+                <ul>
+                    <li>All NP Membership benefits.</li>
+                    <li>Access to selected business workshops.</li>
+                    <li>Business listing in the Chamber directory.</li>
+                    <li>Member discounts on selected events.</li>
+                </ul>
+            </div>
+        </dialog>
+
+        <dialog id="silver-modal" class="benefits-modal">
+            <div class="modal-content">
+                <button class="modal-close" type="button" aria-label="Close dialog">×</button>
+                <p class="eyebrow">Membership benefits</p>
+                <h2>Silver Membership</h2>
+                <p class="modal-price">Q500 / year</p>
+                <ul>
+                    <li>All Bronze Membership benefits.</li>
+                    <li>Priority access to selected training sessions.</li>
+                    <li>Featured business promotion on Chamber social media.</li>
+                    <li>Discounts on selected advertising opportunities.</li>
+                    <li>Priority registration for networking events.</li>
+                </ul>
+            </div>
+        </dialog>
+
+        <dialog id="gold-modal" class="benefits-modal">
+            <div class="modal-content">
+                <button class="modal-close" type="button" aria-label="Close dialog">×</button>
+                <p class="eyebrow">Membership benefits</p>
+                <h2>Gold Membership</h2>
+                <p class="modal-price">Q900 / year</p>
+                <ul>
+                    <li>All Silver Membership benefits.</li>
+                    <li>Premium business spotlight on the Chamber homepage.</li>
+                    <li>Priority business promotion across Chamber channels.</li>
+                    <li>Exclusive invitations to selected business events.</li>
+                    <li>Premium placement in selected Chamber publications.</li>
+                    <li>Additional opportunities to connect with business leaders.</li>
+                </ul>
+            </div>
+        </dialog>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-contact">
+                <h3>Antigua Guatemala Chamber of Commerce</h3>
+                <p>Antigua Guatemala, Sacatepéquez, Guatemala</p>
+                <p>Phone: +502 0000-0000</p>
+                <p>Email: info@example.com</p>
+            </div>
+
+            <div class="footer-development">
+                <p>WDD 231 - Web Frontend Development I</p>
+                <p>Developed by Madelin Rebeca Hernández Aguilar</p>
+                <p>
+                    &copy; <span id="current-year"></span>
+                    Antigua Guatemala Chamber of Commerce
+                </p>
+                <p>Last Modified: <span id="last-modified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

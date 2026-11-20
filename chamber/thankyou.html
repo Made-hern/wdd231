@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your membership application has been received by the Antigua Guatemala Chamber of Commerce.">
+    <meta name="author" content="Madelin Hernández">
+    <title>Application Received | Antigua Guatemala Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <script src="scripts/thankyou.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a class="site-brand" href="index.html">
+                <span class="brand-name">Antigua Guatemala</span>
+                <span class="brand-subtitle">Chamber of Commerce</span>
+            </a>
+            <button id="menu-button" class="menu-button" aria-label="Open navigation menu" aria-expanded="false">
+                ☰
+            </button>
+            <nav id="main-nav" class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="discover.html">Discover</a>
+                <a href="directory.html">Directory</a>
+                <a href="join.html" class="active" aria-current="page">Join</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="join-main">
+        <section class="page-heading">
+            <p class="eyebrow">Thank you</p>
+            <h1>Application Received!</h1>
+            <p>Your membership application has been submitted successfully. We appreciate your interest in joining our business community.</p>
+        </section>
+
+        <section class="application-section confirmation-section" aria-labelledby="confirmation-heading">
+            <h2 id="confirmation-heading">Submitted Information</h2>
+            <p class="section-intro">Please review the information you submitted.</p>
+
+            <div class="confirmation-card">
+                <dl class="submitted-information">
+                    <div>
+                        <dt>First Name</dt>
+                        <dd id="submitted-first-name">Not provided</dd>
+                    </div>
+                    <div>
+                        <dt>Last Name</dt>
+                        <dd id="submitted-last-name">Not provided</dd>
+                    </div>
+                    <div>
+                        <dt>Email Address</dt>
+                        <dd id="submitted-email">Not provided</dd>
+                    </div>
+                    <div>
+                        <dt>Mobile Phone</dt>
+                        <dd id="submitted-phone">Not provided</dd>
+                    </div>
+                    <div>
+                        <dt>Business / Organization</dt>
+                        <dd id="submitted-organization">Not provided</dd>
+                    </div>
+                    <div>
+                        <dt>Submission Date and Time</dt>
+                        <dd id="submitted-timestamp">Not provided</dd>
+                    </div>
+                </dl>
+            </div>
+
+            <a class="back-to-join" href="join.html">Return to Membership Application</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-contact">
+                <h3>Antigua Guatemala Chamber of Commerce</h3>
+                <p>Antigua Guatemala, Sacatepéquez, Guatemala</p>
+                <p>Phone: +502 0000-0000</p>
+                <p>Email: info@example.com</p>
+            </div>
+
+            <div class="footer-development">
+                <p>WDD 231 - Web Frontend Development I</p>
+                <p>Developed by Madelin Rebeca Hernández Aguilar</p>
+                <p>
+                    &copy; <span id="current-year"></span>
+                    Antigua Guatemala Chamber of Commerce
+                </p>
+                <p>Last Modified: <span id="last-modified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

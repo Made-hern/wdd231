@@ -1,0 +1,297 @@
+
+/* Discover page */
+.discover-main {
+    width: min(1150px, 92%);
+    margin: 0 auto;
+    padding-bottom: 4rem;
+}
+
+.discover-heading {
+    text-align: center;
+    padding: 3rem 1rem 2rem;
+}
+
+.discover-heading h1 {
+    color: #292522;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 0.8rem;
+}
+
+.discover-heading > p:last-child {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #625b55;
+}
+
+.eyebrow {
+    color: #7A342E;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+/* Last visit message */
+.visitor-message {
+    padding: 1.2rem 1.5rem;
+    margin: 1rem 0 2rem;
+    border-left: 5px solid #D8B36A;
+    border-radius: 6px;
+    background: #F7F3EA;
+}
+
+.visitor-message h2 {
+    color: #7A342E;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+}
+
+.visitor-message p {
+    color: #292522;
+}
+
+/* Introduction */
+.discover-intro {
+    margin: 2.5rem 0;
+    max-width: 850px;
+}
+
+.discover-intro h2,
+.section-title h2 {
+    color: #292522;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 1.8rem;
+    margin-bottom: 0.6rem;
+}
+
+.discover-intro p,
+.section-title > p:last-child {
+    color: #625b55;
+    line-height: 1.7;
+}
+
+/* Attractions */
+.attractions-section {
+    margin-top: 3rem;
+}
+
+.section-title {
+    margin-bottom: 1.5rem;
+}
+
+/* Small screens: 320px to 640px */
+.attractions-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "place1"
+        "place2"
+        "place3"
+        "place4"
+        "place5"
+        "place6"
+        "place7"
+        "place8";
+    gap: 1.25rem;
+}
+
+.area-1 { grid-area: place1; }
+.area-2 { grid-area: place2; }
+.area-3 { grid-area: place3; }
+.area-4 { grid-area: place4; }
+.area-5 { grid-area: place5; }
+.area-6 { grid-area: place6; }
+.area-7 { grid-area: place7; }
+.area-8 { grid-area: place8; }
+
+.attraction-card {
+    min-width: 0;
+    padding: 1rem;
+    border: 1px solid #DED5C7;
+    border-radius: 10px;
+    background: #FFFFFF;
+    box-shadow: 0 4px 15px rgba(41, 37, 34, 0.07);
+    overflow: hidden;
+}
+
+.attraction-card h2 {
+    color: #7A342E;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+}
+
+.attraction-card figure {
+    margin: 0 0 0.9rem;
+    overflow: hidden;
+    border-radius: 7px;
+}
+
+.attraction-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+}
+
+.attraction-card address {
+    color: #7A342E;
+    font-size: 0.85rem;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 0.7rem;
+}
+
+.attraction-card p {
+    color: #625b55;
+    line-height: 1.6;
+    margin-bottom: 0.8rem;
+}
+
+.attraction-card .more-info {
+    padding-top: 0.7rem;
+    border-top: 1px solid #DED5C7;
+}
+
+.learn-more-button {
+    padding: 0.65rem 1rem;
+    border: 0;
+    border-radius: 5px;
+    background: #7A342E;
+    color: #FFFFFF;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.learn-more-button:hover {
+    background: #5f2824;
+}
+
+.learn-more-button:focus-visible {
+    outline: 3px solid #D8B36A;
+    outline-offset: 3px;
+}
+
+/* Medium screens: 641px to 1024px */
+@media (min-width: 641px) and (max-width: 1024px) {
+    .attractions-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-areas:
+            "place1 place1"
+            "place2 place3"
+            "place4 place4"
+            "place5 place6"
+            "place7 place8";
+        gap: 1.5rem;
+    }
+
+    .attraction-card {
+        padding: 1.2rem;
+    }
+
+    .attraction-card img {
+        transition: transform 0.35s ease, filter 0.35s ease;
+    }
+
+    .attraction-card figure:hover img {
+        transform: scale(1.06);
+        filter: brightness(0.88);
+    }
+}
+
+/* Large screens: 1025px and above */
+@media (min-width: 1025px) {
+    .attractions-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        grid-template-areas:
+            "place1 place1 place2 place3"
+            "place4 place5 place5 place6"
+            "place7 place7 place8 place8";
+        gap: 1.5rem;
+    }
+
+    .attraction-card {
+        padding: 1.2rem;
+    }
+
+    .attraction-card img {
+        transition: transform 0.35s ease, filter 0.35s ease;
+    }
+
+    .attraction-card figure:hover img {
+        transform: scale(1.06);
+        filter: brightness(0.88);
+    }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .attraction-card img {
+        transition: none;
+    }
+}
+
+/* History, demographics, and local events */
+.city-facts {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 2.5rem 0;
+}
+
+.fact-card {
+    padding: 1.4rem;
+    border: 1px solid #DED5C7;
+    border-radius: 10px;
+    background: #FFFFFF;
+}
+
+.fact-card h2 {
+    color: #292522;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 1.4rem;
+    margin-bottom: 0.7rem;
+}
+
+.fact-card p:not(.eyebrow):not(.population-number):not(.fact-note) {
+    color: #625b55;
+    line-height: 1.7;
+    margin-bottom: 0.6rem;
+}
+
+.population-number {
+    color: #7A342E;
+    font-size: 2.4rem;
+    font-weight: 800;
+    margin: 0.5rem 0;
+}
+
+.fact-note {
+    color: #746b62;
+    font-size: 0.78rem;
+    margin-top: 0.8rem;
+}
+
+@media (min-width: 641px) {
+    .city-facts {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .population-card {
+        grid-row: span 2;
+    }
+}
+
+@media (min-width: 1025px) {
+    .city-facts {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .population-card {
+        grid-row: auto;
+    }
+}
